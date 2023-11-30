@@ -1,4 +1,5 @@
 import turtle
+
 def draw_maze(maze, path):
     # Define colors for the maze
     colors = {"#": "#191970", "-": "#483D8B", "%": "#000080", "S": "#8643B3", "G": "#4169E1"}
@@ -43,7 +44,6 @@ def draw_maze(maze, path):
         x2, y2 = path[i + 1] % len(maze[0]), path[i + 1] // len(maze[0])
         t.goto(x + 30 + x1 * 60, y - 30 - y1 * 60)
         t.goto(x + 30 + x2 * 60, y - 30 - y2 * 60)
-        print(x1, y1, x2, y2)
 
     # Show the turtle window
     turtle.done()
